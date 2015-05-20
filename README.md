@@ -13,6 +13,6 @@ To test this app, clone this project, then from the root of the project, run `py
 If any database changes are made to the model, follow these steps before running the testrunner:
 
   1. `pip install -e .` to install the app.
-  2. Set up migrations, run
+  2. Set up migrations by running
      ```django-admin makemigrations testapp --settings=testapp.test_settings```
-  3. Run migrations ```django-admin migrate testapp --settings=testapp.test_settings```
+  3. Run the migrations with ```django-admin migrate testapp --settings=testapp.test_settings```
