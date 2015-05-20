@@ -16,7 +16,6 @@ with open('HISTORY.md') as history_file:
 
 requirements = [
     'Django >= 1.7',
-    'django-appconf==1.0.1',
 ]
 
 test_requirements = [
