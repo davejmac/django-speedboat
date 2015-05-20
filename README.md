@@ -8,9 +8,12 @@ A project to test a reusable django app
 
 
 ## Testing ##
-To unit test this app, use the following steps:
+To test this app, clone this project, then from the root of the project, run `python testrunner.py`
 
-  1. Clone this project, then from the root of the project, run `pip install -e .` to install the app.
-  2. To set up inital migrations, run
+If any database changes are made to the model, follow these steps before running the testrunner:
+
+
+  1. `pip install -e .` to install the app.
+  2. Set up migrations, run
      ```django-admin makemigrations testapp --settings=testapp.test_settings```
-  3. Then test using `python testrunner.py`
+  3. Run migrations ```django-admin migrate testapp --settings=testapp.test_settings```
