@@ -9,7 +9,7 @@ from django.test.utils import get_runner
 os.environ['DJANGO_SETTINGS_MODULE'] = 'tests.test_settings'
 django.setup()
 
-
+# for running via setup
 def run_tests():
     runner_class = get_runner(settings)
     test_runner = runner_class(verbosity=1, interactive=True)
